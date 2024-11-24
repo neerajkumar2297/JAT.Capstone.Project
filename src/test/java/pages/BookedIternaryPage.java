@@ -12,8 +12,11 @@ public class BookedIternaryPage extends ProjectMethod{
 	@FindBy(xpath="//a[@href='BookedItinerary.php']")
 	WebElement BookedItinerary;
 	
+	@FindBy(id="order_id_text")
+	WebElement searchOrderId;
 	
-	
+	@FindBy(id="search_hotel_id")
+	WebElement search_btn;
 	
 	
 
@@ -22,6 +25,24 @@ public class BookedIternaryPage extends ProjectMethod{
 		
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
+	}
+	
+	public BookedIternaryPage clickBookedIternary() {
+		BookedItinerary.click();
+		return this;
+	}
+	
+	public BookedIternaryPage searchOrderId() {
+		
+		
+		searchOrderId.click();
+		
+		passValue(searchOrderId, "V37GL9VE43");
+		search_btn.click();
+		
+		
+		
+		return this;
 	}
 
 	

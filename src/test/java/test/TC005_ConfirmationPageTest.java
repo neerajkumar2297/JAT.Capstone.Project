@@ -11,9 +11,7 @@ public class TC005_ConfirmationPageTest extends ProjectMethod{
 	@Test
 	
 	public void ConfirmationPageTest() {
-		test=extent.createTest("Test5");
-		
-			
+					
 		HomePage hp = new HomePage(driver);
 		
 		hp.clickLoginButton()

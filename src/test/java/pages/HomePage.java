@@ -46,6 +46,11 @@ public ConfirmationPage methodConfirmation() {
 		
 		return new ConfirmationPage(driver);
 	}
+
+public BookedIternaryPage methodBookedIternary() {
 	
+	return new BookedIternaryPage(driver);
+}
 	
+
 }

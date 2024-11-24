@@ -11,7 +11,7 @@ public class TC002_SearchTest extends ProjectMethod {
 	
 	@Test
 	public void SearchTest() {
-		test=extent.createTest("Test2");
+		
 		HomePage hp = new HomePage(driver);
 		hp.clickLoginButton()
 		.validCreds();

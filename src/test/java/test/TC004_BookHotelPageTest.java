@@ -9,9 +9,7 @@ public class TC004_BookHotelPageTest extends ProjectMethod {
 	
 	@Test
 	public void BookHotelPageTest() {
-		test=extent.createTest("Test4");
-		
-			
+					
 		HomePage hp = new HomePage(driver);
 		
 		hp.clickLoginButton()

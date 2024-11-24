@@ -10,7 +10,7 @@ public class TC003_SelectHotelPageTest extends ProjectMethod {
 	
 	@Test
 	public void SelectHotelPageTest() {
-		test=extent.createTest("Test3");
+		
 		
 			
 		HomePage hp = new HomePage(driver);

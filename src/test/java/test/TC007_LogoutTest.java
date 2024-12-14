@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 import base.ProjectMethod;
 import pages.HomePage;
 
-public class TC006_BookedIternaryTest extends ProjectMethod {
+public class TC007_LogoutTest extends ProjectMethod{
 	
 	@Test
-	public void LoginTest() {
+	public void LogoutTest() {
+		
 		
 			
 		HomePage hp = new HomePage(driver);
@@ -16,9 +17,10 @@ public class TC006_BookedIternaryTest extends ProjectMethod {
 		hp.clickLoginButton()
 		.validCreds();
 		
-		hp.methodBookedIternary()
-		.clickBookedIternary()
-		.searchOrderId();
+		hp.methodLogout()
+		.logout();
+	
 	}
+	
 
 }

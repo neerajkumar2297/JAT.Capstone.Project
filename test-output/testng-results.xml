@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-24T20:31:39 IST" name="Default suite" finished-at="2024-11-24T20:31:59 IST" duration-ms="20570">
+  <suite started-at="2024-12-14T16:34:24 IST" name="Suite" finished-at="2024-12-14T16:35:03 IST" duration-ms="39721">
     <groups>
     </groups>
-    <test started-at="2024-11-24T20:31:39 IST" name="Default test" finished-at="2024-11-24T20:31:59 IST" duration-ms="20570">
+    <test started-at="2024-12-14T16:34:24 IST" name="Test" finished-at="2024-12-14T16:35:03 IST" duration-ms="39721">
+      <class name="test.TC003_SelectHotelPageTest">
+        <test-method is-config="true" signature="setupTestClassName(org.testng.ITestContext)[pri:0, instance:test.TC003_SelectHotelPageTest@61322f9d]" started-at="2024-12-14T16:34:53 IST" name="setupTestClassName" finished-at="2024-12-14T16:34:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a1cc163]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestClassName -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:test.TC003_SelectHotelPageTest@61322f9d]" started-at="2024-12-14T16:34:53 IST" name="launchBrowser" finished-at="2024-12-14T16:34:57 IST" duration-ms="3919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.TC003_SelectHotelPageTest.SelectHotelPageTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="SelectHotelPageTest()[pri:0, instance:test.TC003_SelectHotelPageTest@61322f9d]" started-at="2024-12-14T16:34:57 IST" name="SelectHotelPageTest" finished-at="2024-12-14T16:35:02 IST" duration-ms="4813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectHotelPageTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_SelectHotelPageTest@61322f9d]" started-at="2024-12-14T16:35:02 IST" name="closeBrowser" finished-at="2024-12-14T16:35:03 IST" duration-ms="1178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC003_SelectHotelPageTest -->
       <class name="test.TC001_LoginTest">
-        <test-method is-config="true" signature="report()[pri:0, instance:test.TC001_LoginTest@24269709]" started-at="2024-11-24T20:31:39 IST" name="report" finished-at="2024-11-24T20:31:39 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:34:24 IST" name="report" finished-at="2024-12-14T16:34:24 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:test.TC001_LoginTest@24269709]" started-at="2024-11-24T20:31:39 IST" name="launchBrowser" finished-at="2024-11-24T20:31:55 IST" duration-ms="15548" status="PASS">
+        <test-method is-config="true" signature="setupTestClassName(org.testng.ITestContext)[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:34:24 IST" name="setupTestClassName" finished-at="2024-12-14T16:34:24 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a1cc163]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestClassName -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:34:24 IST" name="launchBrowser" finished-at="2024-12-14T16:34:37 IST" duration-ms="13203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,62 +65,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="LoginTest()[pri:0, instance:test.TC001_LoginTest@24269709]" started-at="2024-11-24T20:31:55 IST" name="LoginTest" finished-at="2024-11-24T20:31:57 IST" duration-ms="2340" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [3] but found [2]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [3] but found [2]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at org.testng.Assert.assertEquals(Assert.java:1429)
-at test.TC001_LoginTest.LoginTest(TC001_LoginTest.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="LoginTest()[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:34:37 IST" name="LoginTest" finished-at="2024-12-14T16:34:40 IST" duration-ms="2412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_LoginTest@24269709]" started-at="2024-11-24T20:31:57 IST" name="closeBrowser" finished-at="2024-11-24T20:31:58 IST" duration-ms="1479" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:34:40 IST" name="closeBrowser" finished-at="2024-12-14T16:34:41 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportClose()[pri:0, instance:test.TC001_LoginTest@24269709]" started-at="2024-11-24T20:31:59 IST" name="reportClose" finished-at="2024-11-24T20:31:59 IST" duration-ms="806" status="PASS">
+        <test-method is-config="true" signature="reportClose()[pri:0, instance:test.TC001_LoginTest@279fedbd]" started-at="2024-12-14T16:35:03 IST" name="reportClose" finished-at="2024-12-14T16:35:03 IST" duration-ms="530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportClose -->
       </class> <!-- test.TC001_LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.TC002_SearchTest">
+        <test-method is-config="true" signature="setupTestClassName(org.testng.ITestContext)[pri:0, instance:test.TC002_SearchTest@65e98b1c]" started-at="2024-12-14T16:34:41 IST" name="setupTestClassName" finished-at="2024-12-14T16:34:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a1cc163]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestClassName -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:test.TC002_SearchTest@65e98b1c]" started-at="2024-12-14T16:34:41 IST" name="launchBrowser" finished-at="2024-12-14T16:34:47 IST" duration-ms="6102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.TC002_SearchTest.SearchTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="SearchTest()[pri:0, instance:test.TC002_SearchTest@65e98b1c]" started-at="2024-12-14T16:34:47 IST" name="SearchTest" finished-at="2024-12-14T16:34:52 IST" duration-ms="4346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_SearchTest@65e98b1c]" started-at="2024-12-14T16:34:52 IST" name="closeBrowser" finished-at="2024-12-14T16:34:53 IST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC002_SearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

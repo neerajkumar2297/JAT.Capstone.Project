@@ -4,8 +4,6 @@ import org.testng.annotations.Test;
 
 import base.ProjectMethod;
 import pages.HomePage;
-import pages.LoginPage;
-import pages.SearchPage;
 
 public class TC002_SearchTest extends ProjectMethod {
 	
@@ -16,8 +14,7 @@ public class TC002_SearchTest extends ProjectMethod {
 		hp.clickLoginButton()
 		.validCreds();
 		
-		
-		
+				
 		hp.methodSearch()
 		.selectLocation()
 		.hotels()
@@ -28,24 +25,6 @@ public class TC002_SearchTest extends ProjectMethod {
 		.adult_room()
 		.child_room()
 		.Submit()
-		
-		/*
-		
-		SearchPage obj = new SearchPage(driver);
-		
-		.selectLocation()
-		.hotels()
-		.room_type()
-		.room_nos()
-		.datepick_in()
-		.datepick_out()
-		.adult_room()
-		.child_room()
-		.Submit()
-		
-		*/
-		
-		
 		;
 		
 	}

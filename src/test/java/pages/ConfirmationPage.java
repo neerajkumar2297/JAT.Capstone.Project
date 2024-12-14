@@ -5,32 +5,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import base.ProjectMethod;
+import utils.UtilityCls;
 
-public class ConfirmationPage extends ProjectMethod {
-	
+public class ConfirmationPage extends UtilityCls {
 
-	@FindBy(id="order_no")
+	@FindBy(id = "order_no")
 	WebElement order_no;
-	
-	
-	
-	
-	
-	
-	
+
 	public ConfirmationPage(WebDriver driver) {
-		
+
 		PageFactory.initElements(driver, this);
-		this.driver=driver;
+		this.driver = driver;
 	}
-	
+
 	public ConfirmationPage order_no() {
-		
-		String ODNo =order_no.getAttribute("value");
-		
-		System.out.println("Booked Successfully. Order No.: " +ODNo);
-		
+
+		String ODNo = order_no.getAttribute("value");
+
+		System.out.println("Booked Successfully. Order No.: " + ODNo);
+
 		return this;
 	}
 

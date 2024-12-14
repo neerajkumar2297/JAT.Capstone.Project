@@ -7,8 +7,9 @@
         <methods>
           <include name="LoginTest"/>
           <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="setupTestClassName"/>
           <include name="report"/>
+          <include name="launchBrowser"/>
           <include name="reportClose"/>
         </methods>
       </class> <!-- test.TC001_LoginTest -->

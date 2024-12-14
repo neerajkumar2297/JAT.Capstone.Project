@@ -3,14 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.TC002_SearchTest">
+      <class name="test.TC010_CancelBooking">
         <methods>
-          <include name="SearchTest"/>
+          <include name="CancelBooking"/>
+          <include name="closeBrowser"/>
           <include name="report"/>
           <include name="launchBrowser"/>
           <include name="reportClose"/>
         </methods>
-      </class> <!-- test.TC002_SearchTest -->
+      </class> <!-- test.TC010_CancelBooking -->
+      <class name="test.TC006_BookedItineraryTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="report"/>
+          <include name="reportClose"/>
+          <include name="BookedItineraryTest"/>
+        </methods>
+      </class> <!-- test.TC006_BookedItineraryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

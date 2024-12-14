@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="5">
-	
-	<listeners> <listener class-name="pages.ScreenShotCls"/> </listeners>
-  <test  name="Test">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="test.TC005_ConfirmationPageTest"/> 
-      <class name="test.TC003_SelectHotelPageTest"/>
       <class name="test.TC001_LoginTest"/>
-     <class name="test.TC004_BookHotelPageTest"/> 
       <class name="test.TC002_SearchTest"/>
+      <class name="test.TC003_SelectHotelPageTest"/>
+      <class name="test.TC004_BookHotelPageTest"/>
+      <class name="test.TC005_ConfirmationPageTest"/>
+      <class name="test.TC006_BookedItineraryTest"/>
+      <class name="test.TC007_LogoutTest"/>
+      <class name="test.TC008_BookAndConfirmTest"/>
+      <class name="test.TC009_BookAndCancelTest"/>
+      <class name="test.TC010_CancelBooking"/>
     </classes>
   </test> <!-- Test -->
-	
 </suite> <!-- Suite -->

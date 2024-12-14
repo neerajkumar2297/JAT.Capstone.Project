@@ -48,7 +48,6 @@ public class TC005_ConfirmationPageTest extends ProjectMethod{
 		
 		hp.methodConfirmation()
 		.order_no()
-		
 		;
 		
 	}

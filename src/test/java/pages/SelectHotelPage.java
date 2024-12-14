@@ -5,35 +5,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import base.ProjectMethod;
+import utils.UtilityCls;
 
-public class SelectHotelPage extends ProjectMethod {
-	
+public class SelectHotelPage extends UtilityCls {
 
-	@FindBy(id="radiobutton_0")
+	@FindBy(id = "radiobutton_0")
 	WebElement radiobutton_0;
-	
-	@FindBy(id="continue")
+
+	@FindBy(id = "continue")
 	WebElement continuebtn;
-	
-	
-	
-	
+
 	public SelectHotelPage(WebDriver driver) {
-		
+
 		PageFactory.initElements(driver, this);
-		this.driver=driver;
+		this.driver = driver;
 	}
 
 	public SelectHotelPage hotelSelect() {
 		radiobutton_0.click();
-		
-		continuebtn.click();
-		
-			
-		return this;
-		
-	}
 
+		continuebtn.click();
+
+		return this;
+
+	}
 
 }

@@ -7,36 +7,41 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
-import org.testng.Assert;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import com.aventstack.extentreports.MediaEntityBuilder;
 
-import utils.UtilityCls;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 public class ScreenShotCls implements ITestListener {
 
-	private WebDriver driver;
-	
-	
-	public ScreenShotCls (WebDriver driver) {
-		this.driver=driver;
+	private static WebDriver driver;
+	private static ExtentReports extent;
+	private static ExtentTest test;
+
+	public static void setVariables(WebDriver driver, ExtentReports extent, ExtentTest test) {
+		ScreenShotCls.driver = driver;
+		ScreenShotCls.extent = extent;
+		ScreenShotCls.test = test;
 	}
-	
+
 	@Override
 	public void onTestFailure(ITestResult result) {
-		
-		
-		TakesScreenshot ss = (TakesScreenshot)driver;
-		
+
+		TakesScreenshot ss = (TakesScreenshot) driver;
+
 		File src = ss.getScreenshotAs(OutputType.FILE);
-		
-		File dst=new File(System.getProperty("user.dir") + "\\Images\\img.jpeg");
+
+		String dst = System.getProperty("user.dir") + "\\Images\\" + result.getMethod().getMethodName();
 		try {
-			FileUtils.copyFile(src, dst);
+			FileUtils.copyFile(src, new File(dst));
+
+			test.fail("TestFailed", MediaEntityBuilder.createScreenCaptureFromPath(dst).build());
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

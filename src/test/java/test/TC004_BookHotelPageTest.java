@@ -15,7 +15,6 @@ public class TC004_BookHotelPageTest extends ProjectMethod {
 		hp.clickLoginButton()
 		.validCreds();
 		
-		
 		hp.methodSearch()
 		.selectLocation()
 		.hotels()
@@ -25,8 +24,9 @@ public class TC004_BookHotelPageTest extends ProjectMethod {
 		.datepick_out()
 		.adult_room()
 		.child_room()
-		.Submit();
-		
+		.Submit()
+		;
+	
 		
 		hp.methodSelectHotel()
 		.hotelSelect();
